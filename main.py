@@ -11,7 +11,7 @@ spark = SparkSession.builder \
     .config("spark.some.config.option", "some-value") \
     .getOrCreate()
 
-df = spark.read.csv(r'C:\Users\Huawei\OneDrive\Masaüstü\work\pyspark_churn\bank_customer_churn_prediction.csv',header=True)
+df = spark.read.csv(r'bank_customer_churn_prediction.csv',header=True)
 
 df.show(5)
 """
